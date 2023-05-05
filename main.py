@@ -19,8 +19,34 @@ if not client.is_user_authorized():
     client.sign_in(phone_number, input('Enter the code: '))
 
 # Define the message to be sent
-with open('message.txt', 'r', encoding='cp1252') as f:
-    message = f.read().strip()
+message = """
+💬 Verified Chatter Service
+
+🤑 Boost your sales & Free your time
+💰 just commission is also possible
+🏆 We work with top 0,02% models
+
+Focus on marketing we do the rest👇
+
+✅ Qualified chatter
+✅ 8 hours per Chatter
+✅ US managing everything for you
+✅ Daily reports
+✅ Certified upsell sales strategy
+✅ You can talk with the chatter all the time
+
+📈 We will double your chatting earnings
+🗒 Invoice provided 
+🤝 Start / Stop anytime
+
+🚀 Are you ready to boost your sales & free up your time ? 
+📩 start today! 👇
+
+Website: https://chatterservice.com/
+Telegram: https://t.me/chattingservice/
+Reviews: https://t.me/+esmdgk9JR1xlYWQ0
+"""
+
 
 # Get the group links from a file
 with open('groups.txt') as f:
