@@ -19,7 +19,7 @@ if not client.is_user_authorized():
     client.sign_in(phone_number, input('Enter the code: '))
 
 # Define the message to be sent
-with open('message.txt', 'r') as f:
+with open('message.txt', 'r', encoding='utf-8') as f:
     message = f.read().strip()
 
 # Get the group links from a file
